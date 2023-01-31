@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         //turning
 
-        if(turnRight && dir < 0)
+        if (turnRight && dir < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
             turnRight = false;
@@ -102,7 +102,6 @@ public class PlayerMovement : MonoBehaviour
                 availableJump--;
                 float secondJumpPower = jumpPower - 3;
                 rb.velocity = Vector2.up * secondJumpPower;
-                animator.SetBool("DoubleJump", true);
                 jumpTimer = 0;
 
             }
@@ -117,7 +116,8 @@ public class PlayerMovement : MonoBehaviour
         if (collider.Length > 0)
         {
             isGrounded = true;
-            if(!wasGrounded)
+
+            if (!wasGrounded)
             {
                 availableJump = totalJump;
                 multipleJump = false;
@@ -127,7 +127,6 @@ public class PlayerMovement : MonoBehaviour
         }
       
             animator.SetBool("Jump", !isGrounded);
-            animator.SetBool("DoubleJump", !isGrounded);
 
     }
 
