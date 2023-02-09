@@ -557,6 +557,321 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 1st_atk_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 415
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d98c96a4fc9ac3418f40bc6848882bd
+      internalID: -1045497370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1st_atk_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 366
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f401b80db94be844a956d47f7fcab59e
+      internalID: -544784947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1st_atk_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 415
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14df35f05370ff84c8c691dcea1c71cc
+      internalID: -879041366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1st_atk_0
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 366
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7048cb9e1d0faa4d874708d2ffdc242
+      internalID: -1978690836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2nd_atk_0
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 268
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2483e3097a7fd45ac02b9743dcdfa2
+      internalID: 1216843503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2nd_atk_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 317
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233d1d67c1db9334c8f0090b61118d3e
+      internalID: 1079534844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2nd_atk_3
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 366
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b037e7f890b65974a92b6662162da186
+      internalID: -1362513755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3rd_atk_0
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 268
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eaf7c3a544bf049986ce52f6db3c73
+      internalID: 333545803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3rd_atk_1
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 464
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801ba7b43d3197a43b0709cb619d5d20
+      internalID: 920012234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3rd_atk_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 317
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e69cb3620ad63841a3458ae753b6314
+      internalID: 2119520484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 317
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414b81279ea914e45856454789c2a82a
+      internalID: -1809988860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_hand
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 325
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2490e000408d64546b91f69cc5b31686
+      internalID: -283287060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 235
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02ca176b3cf16246a8ffaf0a97a3470
+      internalID: -854979200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 202
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f83ee16d01a4c4d8b18b1038cb83ed
+      internalID: -1258818473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_atk_0
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 468
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757b5a9d5f91e144f9fee16498553650
+      internalID: 365157964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -571,6 +886,12 @@ TextureImporter:
       jump_2: -1217331776
       run_1: -1461805110
       land_1: 319906631
+      2nd_atk_0: 1216843503
+      aim_1: -1809988860
+      3rd_atk_2: 2119520484
+      2nd_atk_3: -1362513755
+      jump_atk_0: 365157964
+      aim_hand: -283287060
       jump_0: -1606761390
       jump_5: -336935496
       jump_7: 2030390193
@@ -579,15 +900,26 @@ TextureImporter:
       run_4: -443823235
       run_5: -696567336
       land_2: 487772219
+      3rd_atk_1: 920012234
       fall_2: 1024229488
+      3rd_atk_0: 333545803
       fall_1: 572166863
+      1st_atk_1: -1045497370
       run_0: -1182729075
       frost: -736759220
       jump_6: 853627043
       run_3: -1815963088
+      1st_atk_0: -1978690836
+      1st_atk_2: -544784947
+      2nd_atk_1: 1079534844
+      aim_0: -854979200
+      aim_2: -1258818473
       fall_0: 638793726
+      jump_atk_2: -4297560
+      jump_atk_1: 275609957
       jump_3: -2040598325
       land_0: -811801296
+      1st_atk_3: -879041366
       jump_4: 341251551
   spritePackingTag: 
   pSDRemoveMatte: 0

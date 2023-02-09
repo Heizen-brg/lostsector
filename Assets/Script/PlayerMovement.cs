@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
     // Public Fields
     public Transform groundCheckCollider;
     public LayerMask groundLayer;
-
+    public AudioSource audioSource;
+    public AudioClip[] audioClip;
     public float speed = 3;
     public float jumpPower = 10;
     public int totalJump;
+    public int attackCombo;
+    public int maxAttackCombo = 3;
 
     //Private Fields
     Rigidbody2D rb;
@@ -26,16 +29,19 @@ public class PlayerMovement : MonoBehaviour
     bool multipleJump;
     float jumpCooldown = 0.1f;
     float jumpTimer = 0f;
+    bool attackCanDo;
 
     void Awake()
     {
         availableJump = totalJump;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         // Increment the jump timer every frame
         jumpTimer += Time.deltaTime;
         horizontalValue = Input.GetAxisRaw("Horizontal");
@@ -46,9 +52,15 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
         }
-  
+        if (Input.GetKeyDown(KeyCode.C) && !attackCanDo)
+        {
+            Attack();
 
-        animator.SetFloat("yVelocity", rb.velocity.y * 5 );
+        }
+
+
+
+        animator.SetFloat("yVelocity", rb.velocity.y * 5);
     }
 
     void FixedUpdate()
@@ -57,8 +69,9 @@ public class PlayerMovement : MonoBehaviour
         Move(horizontalValue);
     }
 
- 
-    void Move(float dir) {
+
+    void Move(float dir)
+    {
         #region Move & Run
         float xVal = dir * speed * 100 * Time.fixedDeltaTime;
         Vector2 targetVelocity = new Vector2(xVal, rb.velocity.y);
@@ -70,7 +83,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
             turnRight = false;
-        } else if (!turnRight && dir > 0)
+        }
+        else if (!turnRight && dir > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
             turnRight = true;
@@ -79,19 +93,21 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
         #endregion
 
-     
+
     }
 
     void Jump()
     {
         #region Jump
 
-        if (isGrounded )
+        if (isGrounded)
         {
             multipleJump = true;
             availableJump--;
             rb.velocity = Vector2.up * jumpPower;
             animator.SetBool("Jump", true);
+            animator.SetFloat("MultipleJump", 0);
+
             jumpTimer = 0;
 
         }
@@ -103,13 +119,16 @@ public class PlayerMovement : MonoBehaviour
                 float secondJumpPower = jumpPower - 3;
                 rb.velocity = Vector2.up * secondJumpPower;
                 jumpTimer = 0;
+                animator.SetFloat("MultipleJump", 1);
+
 
             }
         }
         #endregion
     }
 
-    void GroundCheck() {
+    void GroundCheck()
+    {
         bool wasGrounded = isGrounded;
         isGrounded = false;
         Collider2D[] collider = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
@@ -125,10 +144,32 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
-      
-            animator.SetBool("Jump", !isGrounded);
+
+        animator.SetBool("Jump", !isGrounded);
 
     }
 
+    void Attack()
+    {
+        Debug.Log("" + attackCombo);
+        attackCanDo = true;
+        animator.SetTrigger("" + attackCombo);
+        audioSource.clip = audioClip[attackCombo];
+        audioSource.Play();
+    }
+    public void StartCombo()
+    {
+        attackCanDo = false;
+        if (attackCombo < maxAttackCombo)
+        {
+            attackCombo++;
+        }
+
+    }
+    public void EndCombo()
+    {
+        attackCanDo = false;
+        attackCombo = 0;
+    }
 
 }
